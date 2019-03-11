@@ -1,0 +1,167 @@
+body {
+    overflow: hidden; 
+}
+
+#menu, #ui {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#menu {
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px #aaa;
+    background-color: #fff;
+    margin: 1em;
+}
+
+#menu:hover {
+    background-color: rgb(152, 54, 38);
+}
+
+#menu:hover rect {
+    fill: #fff;
+}
+
+#ui {
+    z-index: 10;
+    text-align: left;
+    margin: 0;
+    width: 240px;
+    background-color: #fff;
+    transition: all 300ms ease-in;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 1px 0px 8px #aaa;
+}
+
+.moverIzq {
+    transform: translateX(-100%);
+}
+
+#ui > *, .section-container div > * {
+    margin: 0 auto 1ex auto;
+    font-weight: 700;
+    width: 180px;
+}
+
+#ui #description {
+    font-size: 110%;
+    font-weight: 400;
+}
+
+#ui #description h1 {
+    font-size: 160%;
+    font-weight: 400;
+}
+
+#ui button, #ui .file-btn, #ui #close {
+  font-size: 13.3px;
+  padding: 1ex;
+  display: block;
+  background-color: #fff;
+  border: 2px solid #000;
+}
+
+#ui .toggle {
+  color: green;
+  border-color: green;
+}
+
+#ui .deactivated {
+  color: rgb(152, 54, 38);
+  border-color: rgb(152, 54, 38);
+}
+
+#ui #close {
+  width: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  color: rgb(152, 54, 38);
+  background-color: #fff;
+  border: none;
+}
+
+#ui button:hover, #ui .file-btn:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #fff;
+}
+
+#ui .toggle:hover {
+  background-color: green;
+}
+
+#ui .deactivated:hover {
+  background-color: rgb(152, 54, 38);
+}
+
+#ui #close:hover {
+  background-color: #fff;
+  color: #000;
+  border: none;
+}
+
+#ui .slider {
+  padding: 0;
+  margin-top: 15px;
+}
+
+#ui .slider input, #ui select {
+  margin: 1ex 0 0 0;
+  width: 180px;
+}
+
+#ui select {
+  font-size: 13.3px;
+  font-weight: 400;
+  background-color: #fff;
+  border: 2px solid #000;
+  padding: 2px;
+}
+
+#ui hr {
+    border: none;
+    border-top: 2px dotted rgb(152, 54, 38);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 5px;
+}
+
+/*remove style from input file*/
+#ui .file-btn {
+    position: relative;
+    text-align: center;
+}
+
+#ui input[type="file"] {
+	position: absolute;
+	opacity: 0;
+	overflow: hidden;
+}
+
+#ui #signature {
+    display: block;
+    text-decoration: none;
+    color: #983626;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 50px;
+}
+
+#ui #signature svg {
+    display: block;
+    margin-top: 8px;
+}
+
+#ui #signature:hover {
+    color: #6da0bd;
+}
+
+#ui #signature:hover rect {
+    fill: #6da0bd;
+}
