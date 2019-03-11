@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dither me!</title>
+  <link rel="stylesheet" href="ui.css" type="text/css">
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font: 12px sans-serif;
+    }
+
+    canvas, #loading {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+    }
+
+    #loading {
+      width: 120px;
+      height: 1em;
+      color: #888;
+      font-size: 2em;
+    }
+
+    #loading p { 
+      padding: 5px;
+      margin: 0;
+      background-color: rgba(255,255,255,.8);
+    }
+    /*#loading { z-index: 10; }*/
+  </style>
+</head>
+<body>
+  <div id="loading"><p>Loading...</p></div>
+  <canvas id="sketch"></canvas>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
