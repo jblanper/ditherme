@@ -1,7 +1,10 @@
 import Menu from './ui/menu.js';
 
 export default function createUi (event, options) {
-    const menu = new Menu({event: event, showOnLoad: true});
+    const menu = new Menu({
+        event: event, showOnLoad: true,
+        githubUrl: '//github.com/jblanper/getapalette'
+    });
 
     menu.createComponent('description', {
         title: 'Dither me!',
