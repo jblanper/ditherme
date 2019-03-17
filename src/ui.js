@@ -3,7 +3,7 @@ import Menu from './ui/menu.js';
 export default function createUi (event, options) {
     const menu = new Menu({
         event: event, showOnLoad: true,
-        githubUrl: '//github.com/jblanper/getapalette'
+        githubUrl: '//github.com/jblanper/ditherme'
     });
 
     menu.createComponent('description', {
